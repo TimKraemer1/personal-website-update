@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="rotating_cube_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <title>Tim Kraemer - Personal Website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Tim Kraemer &#128187;</div>
+        <div class="nav-links">
+          <button onclick="location.href='index.html'">Home</button>
+          <button onclick="location.href='pages/experience.html'">
+            Experience
+          </button>
+          <button onclick="location.href='pages/projects.html'">
+            Projects
+          </button>
+          <button onclick="location.href='pages/education.html'">
+            Education
+          </button>
+          <button onclick="location.href='pages/blog.html'">Blog</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Home Section -->
+      <div class="bio-container">
+        <div class="bio-image">
+          <img
+            src="images/profile-picture.jpeg"
+            alt="Tim Kraemer"
+            class="profile-image"
+          />
+        </div>
+        <div class="bio-content">
+          <h1>Hello, I'm Tim! &#128075;</h1>
+
+          <h3>&#128205; San Diego, CA</h3>
+
+          <p>
+            Welcome to my personal website! I am a current CSE M.S. student at
+            the <b>University of California, San Diego</b>. I completed my
+            undergraduate at the <b>University of California, Santa Cruz</b> in
+            Computer Engineering, graduating Cum Laude.
+          </p>
+          <br />
+          <p>
+            I am an incoming software and technology intern at
+            <b>Deloitte</b> for the summer of 2025, where I will be working with
+            their National Federal Tax Services, Partnership Solutions Group
+            (NFTS PSG).
+          </p>
+          <br />
+          <p>
+            I am passionate about software engineering, web development, backend
+            development, and artificial intelligence. Feel free to explore my
+            page and to contact me if you have any questions about my
+            experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="cube-container">
+        <div class="scene">
+          <div class="cube">
+            <div class="face front">
+              <button class="cube-face-button">Experience</button>
+            </div>
+            <div class="face back">
+              <button class="cube-face-button">Projects</button>
+            </div>
+            <div class="face left">
+              <button class="cube-face-button">Skills</button>
+            </div>
+            <div class="face right">
+              <button class="cube-face-button">Resume</button>
+            </div>
+            <div class="face top">
+              <button class="cube-face-button">Contact</button>
+            </div>
+            <div class="face bottom">
+              "Software is a great combination between artistry and engineering"
+              Bill Gates
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1>Skills</h1>
+
+      <div class="skills-container">
+        <div class="skills-content">
+          <h4><u>Programming Languages</u></h4>
+          <p><i class="devicon-python-plain colored"></i>&nbsp;Python</p>
+          <p><i class="devicon-javascript-plain colored"></i>&nbsp;Javascript</p>
+          <p><i class="devicon-c-plain colored"></i>&nbsp;C</p>
+          <p><i class="devicon-cplusplus-plain colored"></i>&nbsp;C++</p>
+          <p><i class="devicon-azuresqldatabase-plain colored"></i>&nbsp;SQL</p>
+          <p><i class="devicon-json-plain"></i> <i class="devicon-xml-plain colored"></i>&nbsp;JSON/XML</p>
+          <p><i class="devicon-html5-plain colored"></i>&nbsp;HTML5</p>
+          <p><i class="devicon-css3-plain colored"></i>&nbsp;CSS3</p>
+        </div>
+        <div class="skills-content">
+          <h4><u>Technologies</u></h4>
+          <p><i class="devicon-git-plain colored"></i>&nbsp;Git</p>
+          <p><i class="devicon-amazonwebservices-plain-wordmark colored"></i> <i class="devicon-azure-plain colored"></i>&nbsp;AWS, Azure</p>
+          <p>Restful APIs</p>
+          <p><i class="devicon-postgresql-plain colored"></i>&nbsp;PostgreSQL</p>
+          <p><i class="devicon-mongodb-plain colored"></i>&nbsp;MongoDB</p>
+          <p><i class="devicon-docker-plain colored"></i>&nbsp;Docker</p>
+          <p><i class="devicon-postman-plain colored"></i>&nbsp;PostMan</p>
+        </div>
+        <div class="skills-content">
+          <h4><u>Libraries/Frameworks</u></h4>
+          <p><i class="devicon-flask-original"></i>&nbsp;Flask</p>
+          <p><i class="devicon-nodejs-plain colored"></i>&nbsp;Node.js</p>
+          <p><i class="devicon-express-original"></i>&nbsp;Express</p>
+          <p><i class="devicon-react-original colored"></i>&nbsp;React</p>
+          <p><i class="devicon-angularjs-plain colored"></i>&nbsp;Angular</p>
+          <p><i class="devicon-pandas-plain-wordmark"></i>&nbsp;Pandas</p>
+          <p><i class="devicon-numpy-plain colored"></i>&nbsp;Numpy</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <p>© 2024 Tim Kraemer. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/TimKraemer1" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/tim-krae" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:tikraemer@ucsd.edu">Email</a>
+        </div>
+      </div>
+    </footer>
+    <script src="rotating_cube_script.js"></script>
+  </body>
+</html>
