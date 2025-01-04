@@ -10,6 +10,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title>Tim Kraemer - Personal Website</title>
   </head>
@@ -29,6 +30,11 @@
             Education
           </button>
           <button onclick="location.href='pages/blog.html'">Blog</button>
+          <a href="documents/Tim Kraemer_Resume.pdf" download>
+            <button>
+              Resume <i class="fas fa-download"></i>
+            </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -75,19 +81,21 @@
         <div class="scene">
           <div class="cube">
             <div class="face front">
-              <button class="cube-face-button">Experience</button>
+              <button class="cube-face-button" onclick="location.href='pages/experience.html'">Experience</button>
             </div>
             <div class="face back">
-              <button class="cube-face-button">Projects</button>
+              <button class="cube-face-button" onclick="location.href='pages/projects.html'">Projects</button>
             </div>
             <div class="face left">
               <button class="cube-face-button">Skills</button>
             </div>
             <div class="face right">
-              <button class="cube-face-button">Resume</button>
+              <a href="documents/Tim Kraemer_Resume.pdf" download="Resume-Tim Kraemer.pdf" style="text-decoration: none;">
+                <button class="cube-face-button">Resume</button>
+              </a>
             </div>
             <div class="face top">
-              <button class="cube-face-button">Contact</button>
+              <button class="cube-face-button" onclick="showPopup()">Contact</button>
             </div>
             <div class="face bottom">
               "Software is a great combination between artistry and engineering"
@@ -95,6 +103,17 @@
             </div>
           </div>
         </div>
+      </div>
+
+       <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <h4><u>Contact Info</u></h4>
+          <p><i class="fas fa-envelope"></i>&nbsp;timkraemer@ucsd.edu</p>
+          <p><i class="fa-brands fa-discord"></i>&nbsp;a french guy</p>
+          <p><i class="fa-brands fa-github"></i>&nbsp;TimKraemer1</p>
+        </div>
+        <button class="popup-button" onclick="hidePopup()">Close</button>
       </div>
 
       <h1>Skills</h1>
@@ -115,7 +134,7 @@
           <h4><u>Technologies</u></h4>
           <p><i class="devicon-git-plain colored"></i>&nbsp;Git</p>
           <p><i class="devicon-amazonwebservices-plain-wordmark colored"></i> <i class="devicon-azure-plain colored"></i>&nbsp;AWS, Azure</p>
-          <p>Restful APIs</p>
+          <p><i class="devicon-fastapi-plain colored"></i>&nbsp;APIs (Fast, Rest)</p>
           <p><i class="devicon-postgresql-plain colored"></i>&nbsp;PostgreSQL</p>
           <p><i class="devicon-mongodb-plain colored"></i>&nbsp;MongoDB</p>
           <p><i class="devicon-docker-plain colored"></i>&nbsp;Docker</p>
@@ -149,4 +168,18 @@
     </footer>
     <script src="rotating_cube_script.js"></script>
   </body>
+
+
+  <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+
 </html>
